@@ -188,7 +188,7 @@ Have fun creating your portfolio on this template!!! -->
               <a href="https://blockchain.ey.com/" target="_blank" rel="noopener noreferrer">
                 <div class="thumbnail rounded">
                   <img
-                    src="./assets/EYChicago.jpeg"
+                    src="./assets/EYBlockchainLogo.jpeg"
                     class="img-fluid"
                     alt="Project Image"
                     width="1366"
@@ -228,7 +228,7 @@ Have fun creating your portfolio on this template!!! -->
               <a href="https://www.ey.com/ko_kr/digital" target="_blank" rel="noopener noreferrer">
                 <div class="thumbnail rounded">
                   <img
-                    src="./assets/EYKorea.jpeg"
+                    src="./assets/EYKoreaLogo.jpeg"
                     class="img-fluid"
                     alt="Project Image"
                     width="1366"
@@ -289,12 +289,30 @@ Have fun creating your portfolio on this template!!! -->
       <div class="container">
         <h2 class="section-title">Contact</h2>
         <div class="contact-wrapper">
-          <p class="contact-wrapper__text">[Put your call to action here]</p>
-          <a href="#" class="cta-btn cta-btn--resume">Call to Action</a>
+          <p class="contact-wrapper__text">Please Feel Free to Reach Out!</p>
+          <a href="#" class="cta-btn cta-btn--resume">Email Me!</a>
         </div>
       </div>
     </section>
     <!-- END Contact Section -->
+
+<!-- Modal Structure -->
+<div id="emailModal" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <h2>Contact Me</h2>
+    <form id="contactForm">
+      <label for="name">Name:</label><br>
+      <input type="text" id="name" name="name" required><br>
+      <label for="email">Email:</label><br>
+      <input type="email" id="email" name="email" required><br>
+      <label for="message">Message:</label><br>
+      <textarea id="message" name="message" required></textarea><br>
+      <button type="submit" class="cta-btn cta-btn--submit">Send</button>
+    </form>
+  </div>
+</div>
+
 
     <!-- Footer Section -->
     <footer class="footer">
@@ -304,31 +322,31 @@ Have fun creating your portfolio on this template!!! -->
         </a>
         <div class="social-links">
           <a
-            href="#!"
+            href="https://x.com/overtheexit"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="twitter"
           >
-            <i class="fa-brands fa-twitter"></i>
+          <i class="fa-brands fa-twitter"></i>
           </a>
           <a
-            href="#!"
+            href="https://www.instagram.com/yoon.s.lee/"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="instagram"
           >
             <i class="fa-brands fa-instagram"></i>
           </a>
-          <a
+          <!-- <a
             href="#!"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="codepen"
           >
             <i class="fa-brands fa-codepen"></i>
-          </a>
+          </a> -->
           <a
-            href="#!"
+            href="https://www.linkedin.com/in/yoonlee1212/"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="linkedin"
@@ -336,7 +354,7 @@ Have fun creating your portfolio on this template!!! -->
             <i class="fa-brands fa-linkedin"></i>
           </a>
           <a
-            href="#!"
+            href="https://github.com/overtheexit"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="github"
@@ -346,13 +364,7 @@ Have fun creating your portfolio on this template!!! -->
         </div>
         <hr />
         <p class="footer__text">
-          &copy; <span id="year"></span> - Template by
-          <a
-            href="https://github.com/AnilSeervi"
-            target="_blank"
-            rel="noopener noreferrer"
-            >Anil Seervi</a
-          >. <br />Made with &hearts;
+          Made with &hearts; by Yoon Lee
         </p>
       </div>
     </footer>
