@@ -278,6 +278,41 @@ Have fun creating your portfolio on this template!!! -->
               </a>
             </div>
           </article>
+
+          <article class="row">
+            <div class="project-wrapper__text">
+              <h3 class="project-wrapper__text-title">Digital Art</h3>
+              <p class="project-wrapper__text-info">
+                Mainly Collage by pictures that were taken by me and modified by me!
+              </p>
+              <!-- <div class="project-wrapper__text-btns">
+                <a
+                  href="#"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="cta-btn cta-btn--hero cta-btn--projects"
+                  ></a
+                >
+                 <a href="#" target="_blank" class="cta-btn text-color-main"
+                  >Source Code</a
+                > 
+              </div> -->
+            </div>
+
+            <div class="project-wrapper__image">
+              <a href="https://opensea.io/overtheexit" target="_blank" rel="noopener noreferrer">
+                <div class="thumbnail rounded">
+                  <img
+                    src="./assets/project.png"
+                    class="img-fluid"
+                    alt="Project Image"
+                    width="1366"
+                    height="767"
+                  />
+                </div>
+              </a>
+            </div>
+          </article>
           <!-- /END Project -->
         </div>
       </div>
@@ -300,19 +335,21 @@ Have fun creating your portfolio on this template!!! -->
 <div id="emailModal" class="modal">
   <div class="modal-content">
     <span class="close">&times;</span>
-    <h2>Contact Me</h2>
-    <form id="contactForm">
-      <label for="name">Name:</label><br>
-      <input type="text" id="name" name="name" required><br>
-      <label for="email">Email:</label><br>
-      <input type="email" id="email" name="email" required><br>
-      <label for="message">Message:</label><br>
-      <textarea id="message" name="message" required></textarea><br>
-      <button type="submit" class="cta-btn cta-btn--submit">Send</button>
+    <form>
+      <label for="name">Name</label>
+      <input type="text" id="name" name="name" placeholder="Your name.." required>
+
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" placeholder="Your email.." required>
+
+      <label for="message">Message</label>
+      <textarea id="message" name="message" placeholder="Write something.." required></textarea>
+
+      <button type="submit" class="cta-btn--submit">Send</button>
     </form>
   </div>
 </div>
-
+  <!-- END Contact Modal -->
 
     <!-- Footer Section -->
     <footer class="footer">
@@ -375,5 +412,7 @@ Have fun creating your portfolio on this template!!! -->
     </script>
     <script src="./javascript/vanilla-tilt.min.js"></script>
     <script type="text/javascript" src="./javascript/valtilt.js"></script>
+    <script src="/javascript/modal.js"></script>
   </body>
+  
 </html>
