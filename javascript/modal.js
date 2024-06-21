@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const emailMeBtn = document.querySelector('#contact .cta-btn');
   
     emailMeBtn.addEventListener('click', (e) => {
-        e.preventDefault();
+        //e.preventDefault();
         modal.style.display = 'flex'; // Changed to 'flex' to match the display style of modal
     });
   

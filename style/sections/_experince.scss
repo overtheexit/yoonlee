@@ -1,0 +1,83 @@
+#experience {
+  padding: 5rem 2rem;
+  background-color: $light-white;
+  color: $dark-grey;
+  font-family: $font-family;
+
+  .section-title {
+    font-size: $big-font-size;
+    margin-bottom: 3rem;
+    color: $dark-blue-text;
+  }
+
+  #experience-container {
+    display: flex;
+    flex-direction: row;
+
+    @include respond(tab-land) {
+      flex-direction: column;
+    }
+
+    #experience-list {
+      width: 30%;
+      border-right: 3px solid $dark-grey;
+      margin-right: 2rem;
+
+      ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+
+        .experience-item {
+          cursor: pointer;
+          padding: 1rem 0;
+          font-size: 2rem;
+          color: $primary-color;
+          transition: color 0.3s;
+
+          &.active {
+            color: $secondary-color;
+            font-weight: bold;
+          }
+
+          &:hover {
+            color: $dark-blue-text;
+          }
+        }
+      }
+    }
+
+    #experience-details {
+      width: 70%;
+      padding-left: 2rem;
+
+      .experience-detail {
+        display: none;
+
+        &.active {
+          display: block;
+        }
+
+        h3 {
+          font-size: $mid-font-size;
+          margin-bottom: 1rem;
+          color: $dark-blue-text;
+        }
+
+        p {
+          font-size: $default-font-size;
+          margin-bottom: 1.5rem;
+        }
+
+        ul {
+          list-style: disc;
+          padding-left: 1.5rem;
+
+          li {
+            margin-bottom: 0.8rem;
+          }
+        }
+      }
+    }
+  }
+}
