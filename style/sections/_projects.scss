@@ -43,6 +43,9 @@
 
       &-info {
         margin-bottom: 1.5rem;
+        .b {
+          color: $secondary-color
+        }
       }
 
       &-btns {
