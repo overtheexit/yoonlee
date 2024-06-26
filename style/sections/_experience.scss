@@ -184,7 +184,7 @@
           text-align: left;
 
           @include respond(tab-port) {
-            font-size: 1rem;
+            font-size: 1.3rem;
           }
 
           @include respond(phone) {
@@ -194,14 +194,13 @@
 
         ul {
           list-style: square;
-          
           padding-left: 1.5rem;
           text-align: left;
 
           li {
             margin-bottom: 0.8rem;
             text-align: left;
-            font-size: 1.5rem
+            font-size: 1.2rem;
 
             @include respond(tab-port) {
               font-size: 1rem;
