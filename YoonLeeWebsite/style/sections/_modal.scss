@@ -1,0 +1,80 @@
+/* Modal Overlay */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.9); /* Semi-transparent background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #000; /* Black background */
+  border-radius: 20px; /* Squarcle effect */
+  padding: 2rem;
+  width: 35vw; /* Adjust size to 35% of viewport width */
+  height: auto;
+  max-width: 500px; /* Maximum width */
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5); /* Shadow for depth */
+  color: #fff; /* White text */
+  position: relative; /* For close button positioning */
+}
+
+/* Close Button */
+.close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  color: #fff;
+  font-size: 3rem; /* Increased font size for better visibility */
+  font-weight: bold;
+  cursor: pointer;
+  background: none;
+  border: none;
+  display: inline-block;
+  padding: 0;
+  &:hover {
+    color: #ccc; /* Slightly lighter on hover */
+  }
+}
+
+/* Input and Textarea Styling */
+.modal-content input,
+.modal-content textarea {
+  width: 100%;
+  padding: 0.8rem;
+  margin: 0.5rem 0;
+  border: none;
+  border-radius: 10px;
+  background: #333; /* Dark background for inputs */
+  color: #fff; /* White text */
+  font-size: 1rem;
+  outline: none;
+}
+
+.modal-content input::placeholder,
+.modal-content textarea::placeholder {
+  color: #999; /* Placeholder color */
+}
+
+/* Button Styling */
+.modal-content .cta-btn--submit {
+  background: linear-gradient(135deg, #36d1dc, #5b86e5); /* Gradient background */
+  border: none;
+  border-radius: 10px;
+  padding: 0.8rem 1.2rem;
+  color: #fff;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  margin-top: 1rem;
+  &:hover {
+    background: linear-gradient(135deg, #5b86e5, #36d1dc); /* Reversed gradient on hover */
+  }
+}
