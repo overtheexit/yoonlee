@@ -1,15 +1,14 @@
 // gallery.js — the collage wall is data-driven so it ports cleanly to a
 // component/CMS later. Add a work by appending one record here and dropping
 // its export into assets/gallery/. `span` sets grid width (2 or 3 of 6 cols);
-// `ar` is the frame aspect-ratio (width/height); `link` is the on-chain page.
+// `ar` is the frame aspect-ratio (width/height).
 
 const GALLERY = [
   {
     src: "./assets/gallery/jureuk.jpg",
     title: "주륵주륵",
     year: "2023",
-    medium: "Digital collage — iPhone photography, Photoleap",
-    link: "https://opensea.io/overtheexit",
+    medium: "Digital collage — iPhone 14 Pro, Photoleap",
     span: 2,
     ar: "3 / 4",
   },
@@ -17,8 +16,7 @@ const GALLERY = [
     src: "./assets/gallery/untitled-1.jpg",
     title: "Untitled-1",
     year: "2023",
-    medium: "Digital collage — iPhone photography, Photoleap",
-    link: "https://opensea.io/overtheexit",
+    medium: "Digital collage — iPhone 14 Pro, Photoleap",
     span: 2,
     ar: "3 / 4",
   },
@@ -26,8 +24,7 @@ const GALLERY = [
     src: "./assets/gallery/buy-me.jpg",
     title: "Buy Me",
     year: "2024",
-    medium: "Digital collage — iPhone photography, Photoleap",
-    link: "https://opensea.io/overtheexit",
+    medium: "Digital collage — iPhone 14 Pro, Photoleap",
     span: 2,
     ar: "3 / 4",
   },
@@ -35,8 +32,7 @@ const GALLERY = [
     src: "./assets/gallery/logo.jpg",
     title: "LOGO",
     year: "2021",
-    medium: "Digital collage — iPhone photography, Photoleap",
-    link: "https://opensea.io/overtheexit",
+    medium: "Digital collage — iPhone 14 Pro, Photoleap",
     span: 4,
     ar: "1179 / 1025",
   },
@@ -44,8 +40,7 @@ const GALLERY = [
     src: "./assets/gallery/messy-summer.jpg",
     title: "Messey Summer",
     year: "2022",
-    medium: "Digital collage — iPhone photography, Photoleap",
-    link: "https://opensea.io/overtheexit",
+    medium: "Digital collage — iPhone 14 Pro, Photoleap",
     span: 2,
     ar: "828 / 1026",
   },
@@ -90,4 +85,7 @@ const GALLERY = [
     fig.appendChild(cap);
     room.appendChild(fig);
   });
+
+  const countEl = document.getElementById("workCount");
+  if (countEl) countEl.textContent = GALLERY.length;
 })();

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>overtheexit — Collage by Yoon Lee</title>
+    <meta
+      name="description"
+      content="overtheexit — collage in found photography by Yoon Lee. Shot on iPhone, built in Photoleap."
+    />
+    <meta name="theme-color" content="#0E0F13" />
+
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cdefs%3E%3CradialGradient id='g' cx='34%25' cy='30%25'%3E%3Cstop offset='0' stop-color='%238f8bff'/%3E%3Cstop offset='46%25' stop-color='%232a1fb8'/%3E%3Cstop offset='100%25' stop-color='%23140a6e'/%3E%3C/radialGradient%3E%3C/defs%3E%3Ccircle cx='16' cy='16' r='14' fill='url(%23g)'/%3E%3C/svg%3E"
+    />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://overtheexit.github.io/yoonlee/art.html" />
+    <meta property="og:title" content="overtheexit — Collage by Yoon Lee" />
+    <meta property="og:description" content="Collage in found photography. Shot on iPhone, built in Photoleap." />
+    <meta property="og:image" content="https://overtheexit.github.io/yoonlee/assets/gallery/jureuk.jpg" />
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:title" content="overtheexit — Collage by Yoon Lee" />
+    <meta property="twitter:image" content="https://overtheexit.github.io/yoonlee/assets/gallery/jureuk.jpg" />
+
+    <link rel="preload" as="style" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
+  <body>
+    <nav>
+      <div class="wrap">
+        <a class="mark" href="index.html"><span class="ball" aria-hidden="true"></span> overtheexit</a>
+        <div class="nav-right">
+          <div class="toggle" role="tablist" aria-label="Switch between Data and Art">
+            <a href="index.html">Data</a>
+            <a href="art.html" class="active" aria-current="page">Art</a>
+          </div>
+          <a class="nav-contact" href="#contact">Contact</a>
+        </div>
+      </div>
+    </nav>
+
+    <header id="top" class="art-hero">
+      <div class="wrap hero">
+        <p class="eyebrow">overtheexit · collage in found photography</p>
+        <h1>Found photography, <span class="slash">/</span> recomposed.</h1>
+        <p class="lede">
+          Shot on an iPhone 14 Pro and built in Photoleap — walls, signage, light, the odd disco
+          ball. I take what a city leaves lying around and look for the one arrangement that makes
+          it read. The recurring blue mirror-ball is my mark.
+        </p>
+      </div>
+    </header>
+
+    <main>
+      <section class="gallery" id="gallery">
+        <div class="wrap">
+          <p class="room-count mono"><span id="workCount"></span> works · more as I make them</p>
+          <div class="room" id="room" role="list"><!-- rendered from javascript/gallery.js --></div>
+        </div>
+      </section>
+    </main>
+
+    <footer id="contact">
+      <div class="wrap">
+        <p class="eyebrow footer-eyebrow">Contact</p>
+        <p class="ftitle">
+          Want a piece, or just to talk shop?<br />
+          <a href="mailto:yoonseo.lee1212@gmail.com?subject=Hello%20Yoon%20—%20overtheexit">Say hello ↗</a>
+        </p>
+        <div class="fmeta">
+          <div class="social">
+            <a href="https://www.instagram.com/yoon.s.lee/" target="_blank" rel="noopener noreferrer">Instagram</a>
+            <a href="https://www.linkedin.com/in/yoonlee1212/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            <a href="https://github.com/overtheexit" target="_blank" rel="noopener noreferrer">GitHub</a>
+          </div>
+          <p class="cr">© <span id="yr"></span> Yoon Lee · overtheexit</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Lightbox -->
+    <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Artwork viewer" hidden>
+      <button class="lightbox-close" id="lightboxClose" aria-label="Close viewer">✕</button>
+      <figure class="lightbox-inner">
+        <img id="lightboxImg" src="" alt="" />
+        <figcaption id="lightboxCap"></figcaption>
+      </figure>
+    </div>
+
+    <script src="./javascript/gallery.js"></script>
+    <script src="./javascript/site.js"></script>
+  </body>
+</html>
