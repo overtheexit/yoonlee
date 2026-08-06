@@ -1,0 +1,6 @@
+# OS
+.DS_Store
+
+# Full-resolution art masters — kept local, not published to GitHub Pages.
+# Web-optimized versions in assets/gallery/*.jpg are what the site serves.
+assets/gallery/originals/
