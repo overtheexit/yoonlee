@@ -1,0 +1,93 @@
+// gallery.js — the collage wall is data-driven so it ports cleanly to a
+// component/CMS later. Add a work by appending one record here and dropping
+// its export into assets/gallery/. `span` sets grid width (2 or 3 of 6 cols);
+// `ar` is the frame aspect-ratio (width/height); `link` is the on-chain page.
+
+const GALLERY = [
+  {
+    src: "./assets/gallery/piece-01.jpg",
+    title: "Leak",
+    year: "2024",
+    medium: "Digital collage — iPhone photography, Photoleap",
+    link: "https://opensea.io/overtheexit",
+    span: 2,
+    ar: "3 / 4",
+  },
+  {
+    src: "./assets/gallery/piece-02.jpg",
+    title: "Service, Interrupted",
+    year: "2023",
+    medium: "Digital collage — iPhone photography, Photoleap",
+    link: "https://opensea.io/overtheexit",
+    span: 2,
+    ar: "3 / 4",
+  },
+  {
+    src: "./assets/gallery/piece-04.jpg",
+    title: "Regression",
+    year: "2024",
+    medium: "Digital collage — iPhone photography, Photoleap",
+    link: "https://opensea.io/overtheexit",
+    span: 2,
+    ar: "7 / 6",
+  },
+  {
+    src: "./assets/gallery/piece-03.jpg",
+    title: "Overtheexit (Public)",
+    year: "2023",
+    medium: "Digital collage — iPhone photography, Photoleap",
+    link: "https://opensea.io/overtheexit",
+    span: 3,
+    ar: "4 / 5",
+  },
+  {
+    src: "./assets/gallery/piece-05.jpg",
+    title: "Vanishing Point",
+    year: "2024",
+    medium: "Digital collage — iPhone photography, Photoleap",
+    link: "https://opensea.io/overtheexit",
+    span: 3,
+    ar: "3 / 4",
+  },
+];
+
+(function renderGallery() {
+  const room = document.getElementById("room");
+  if (!room) return;
+
+  GALLERY.forEach((p) => {
+    const fig = document.createElement("figure");
+    fig.className = "piece s" + p.span;
+    fig.setAttribute("role", "listitem");
+
+    const frame = document.createElement("div");
+    frame.className = "frame";
+    frame.style.aspectRatio = p.ar;
+
+    const img = document.createElement("img");
+    img.loading = "lazy";
+    img.src = p.src;
+    img.alt = p.title + " — " + p.medium;
+    // Until the real export is dropped in, show the "awaiting export" state
+    // instead of a broken image.
+    img.addEventListener("error", () => frame.classList.add("missing"));
+    frame.appendChild(img);
+
+    // Open the lightbox (wired up in site.js) unless the frame is a placeholder.
+    frame.addEventListener("click", () => {
+      if (frame.classList.contains("missing")) return;
+      window.openLightbox && window.openLightbox(p);
+    });
+
+    const cap = document.createElement("figcaption");
+    cap.className = "label";
+    cap.innerHTML =
+      '<span class="lt"></span><span class="lm"></span>';
+    cap.querySelector(".lt").textContent = p.title;
+    cap.querySelector(".lm").textContent = p.year + " · " + p.medium;
+
+    fig.appendChild(frame);
+    fig.appendChild(cap);
+    room.appendChild(fig);
+  });
+})();

@@ -4,465 +4,230 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link rel="preconnect" href="https://cdnjs.cloudflare.com" />
 
-    <!-- Title: add your Portfolio websites's title here -->
-    <title>Yoon Lee | Overtheexit</title>
+    <title>Yoon Lee — Data Science × Collage</title>
+    <meta
+      name="description"
+      content="Yoon Lee, Boston. Data scientist by trade, collage artist by instinct. Finding the picture in the noise."
+    />
+    <meta name="keywords" content="Yoon Lee, overtheexit, data scientist, collage, digital art, Python, SQL, BigQuery, Boston" />
+    <meta name="theme-color" content="#2530D6" />
 
-    <!-- Add some coding keywords below, Ex: (javascript, yourusername, etc) -->
-    <meta name="keywords" content="overtheexit, Yoon Lee, R, Python, SQL, pandas, Blockchain" />
+    <!-- Favicon: the overtheexit mirror-ball mark -->
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cdefs%3E%3CradialGradient id='g' cx='34%25' cy='30%25'%3E%3Cstop offset='0' stop-color='%238f8bff'/%3E%3Cstop offset='46%25' stop-color='%232a1fb8'/%3E%3Cstop offset='100%25' stop-color='%23140a6e'/%3E%3C/radialGradient%3E%3C/defs%3E%3Ccircle cx='16' cy='16' r='14' fill='url(%23g)'/%3E%3C/svg%3E"
+    />
 
-    <!-- Improve your SEO by adding a small descrption of you -->
-    <meta name="description" content="Yoon Lee | Overtheexit" />
-
-    <!-- Add a your png Logo to the assets folder and change the href attr accordingly  -->
-    <link rel="icon" type="image/png" href="./assets/OpenseaArt.avif" />
-
-    <!-- Add your primary-theme color for the value of content -->
-    <meta name="theme-color" content="#F2D2BD" />
-
-    <!-- Open Graph / Facebook -->
+    <!-- Open Graph / Twitter -->
     <meta property="og:type" content="website" />
-    <!-- Fill content with the URL of this portfolio you'll host -->
     <meta property="og:url" content="https://overtheexit.github.io/yoonlee/" />
-    <!-- Fill content with the title of your portfolio(Recommended to use what you put in <title> tag) -->
-    <meta property="og:title" content="Yoon Lee | overtheexit" />
-    <!-- Give a short description that'll show up when you/someone shares your portfolio on different platform -->
-    <meta property="og:description" content="Yoon Lee's personal Website showcasing his experiences" />
-    <!-- Add a thumbnail image in assets folder and fill the content attr with URL to that thumbnail 
-      so that a thumbnail image of your portfolio is shown while shared on other platform -->
-    <meta
-      property="og:image"
-      content="https://overtheexit.github.io/yoonlee/assets/OpenseaArt.avif"
-    />
-
-    <!-- Twitter -->
+    <meta property="og:title" content="Yoon Lee — Data Science × Collage" />
+    <meta property="og:description" content="Data scientist by trade, collage artist by instinct. Finding the picture in the noise." />
+    <meta property="og:image" content="https://overtheexit.github.io/yoonlee/assets/OpenSeaArt2.png" />
     <meta property="twitter:card" content="summary_large_image" />
-    <!-- Again fill content attr with the URL of this portfolio you'll host -->
-    <meta property="twitter:url" content="https://overtheexit.github.io/yoonlee/" />
-    <!-- Recommended to use the same text used within <title> element -->
-    <meta property="twitter:title" content="overtheexit | Data Scientist" />
-    <!-- short description that shows up while your portfolio is shared -->
-    <meta
-      property="twitter:description"
-      content="Yoon Lee's portfolio website"
-    />
-    <!-- Fill content with the URL to the thumbnail image that you'll put in the assets folder -->
-    <meta
-      property="twitter:image"
-      content="https://overtheexit.github.io/yoonlee/assets/OpenseaArt.avif"
-    />
+    <meta property="twitter:title" content="Yoon Lee — Data Science × Collage" />
+    <meta property="twitter:description" content="Data scientist by trade, collage artist by instinct." />
+    <meta property="twitter:image" content="https://overtheexit.github.io/yoonlee/assets/OpenSeaArt2.png" />
 
-    <!-- link tags -->
     <link rel="preload" as="style" href="./css/main.css" />
     <link rel="stylesheet" href="./css/main.css" />
-
-    <!-- FontAwesome Icons link -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
-      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <script defer src="./javascript/scrollreveal.min.js"></script>
-    <script
-      defer
-      type="text/javascript"
-      src="./javascript/scrollveal.js"
-    ></script>
-
-    <!-- Remove Google Analytics once you have your portfolio website set-up -->
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script
-      async
-      src="https://www.googletagmanager.com/gtag/js?id=UA-122228201-4"
-    ></script>
-    <script>
-      window.dataLayer = window.dataLayer || []
-      function gtag() {
-        dataLayer.push(arguments)
-      }
-      gtag("js", new Date())
-
-      gtag("config", "UA-122228201-4")
-    </script>
-    <!-- End of Google Analytics -->
   </head>
   <body>
-    <!-- Table of Content section -->
-    <nav class="table-of-contents">
-      <ul>
-        <li><a href="#about" data-section="about">About</a></li>
-        <li><a href="#experience" data-section="experience">Experiences</a></li>
-        <li><a href="#projects" data-section="projects">Projects</a></li>
-        <li><a href="#contact" data-section="contact">Contact</a></li>
-      </ul>
+    <nav>
+      <div class="wrap">
+        <a class="mark" href="#top"><span class="ball" aria-hidden="true"></span> overtheexit</a>
+        <div class="navlinks">
+          <a href="#about">About</a>
+          <a href="#work">Selected Work</a>
+          <a href="#experience">Experience</a>
+          <a href="#gallery">Gallery</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </div>
     </nav>
 
-    <!-- Hero Section -->
-    <div id="hero">
-      <section class="container">
-        <h1 class="hero-title">
-          Hi, my name is <span class="text-color-main name">Yoon Lee</span>
-          <br />
-          Data scientist based in Boston.
-        </h1>
-        <p class="hero-cta">
-          <a class="cta-btn cta-btn--hero" href="https://drive.google.com/file/d/1GihMyxB_xDXug8O7E-FAuoi9dIwty4Cd/view?usp=sharing">My Resume</a>
+    <header id="top">
+      <canvas id="curves" aria-hidden="true"></canvas>
+      <div class="wrap hero">
+        <p class="eyebrow">Boston · Data Science × Collage</p>
+        <h1>Yoon Lee finds the picture <span class="slash">/</span> in the noise.</h1>
+        <p class="lede">
+          Data scientist by trade, collage artist by instinct. Both come down to the same move:
+          take something noisy and over-full — a bank's tangle of reporting rules, a city block,
+          a deli counter — and find the one arrangement that makes it read.
         </p>
+        <div class="cta-row">
+          <a class="btn solid" href="#work">See the work →</a>
+          <a class="btn ghost" href="#gallery">Enter the gallery</a>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section id="about">
+        <div class="wrap">
+          <div class="sec-head"><span class="num">01</span><h2>About</h2></div>
+          <div class="about-grid">
+            <div>
+              <p>
+                I'm a data scientist by trade and a collage artist by instinct. At Management Solutions
+                I own the end-to-end data-quality platform for a major US bank's regulatory reporting
+                team — turning 3,000+ loosely written rules into precise, reusable logic that runs at
+                enterprise scale on Google Cloud.
+              </p>
+              <p>
+                The through-line to the art is the same: I take material that's noisy and over-full —
+                a city block, a deli counter, a concrete wall — and look for the one structure that
+                makes it read. Collage is just feature selection with a camera.
+              </p>
+              <p>
+                Now I'm pointing the analytical half at the field's most interesting problems — the
+                kind of work done at firms like BCG X, QuantumBlack, and Bain.
+              </p>
+              <p class="aside">
+                Off the clock: collage, running, cooking, reading — and an ongoing, humbling
+                experiment trading my own money.
+              </p>
+            </div>
+            <div class="facts">
+              <div class="row"><span class="k">Based</span><span class="v">Boston, MA</span></div>
+              <div class="row"><span class="k">Role</span><span class="v">Data Science Consultant II</span></div>
+              <div class="row"><span class="k">Education</span><span class="v">B.S. Statistics, UIUC ’24</span></div>
+              <div class="row"><span class="k">Stack</span><span class="v">Python · R · SQL · GCP · BigQuery</span></div>
+              <div class="row"><span class="k">Studio</span><span class="v">iPhone · Photoleap · on-chain</span></div>
+              <div class="row"><span class="k">Elsewhere</span><span class="v">OpenSea · LinkedIn · GitHub</span></div>
+            </div>
+          </div>
+        </div>
       </section>
-      <a href="#about" class="scroll-down-link" aria-label="scroll-down">
-        <div class="scroll-down"></div
-      ></a>
-    </div>
-    <!-- /END Hero Section -->
 
-    <!-- About Section -->
-    <section id="about">
-      <div class="container">
-        <h2 class="section-title">About Yoon</h2>
-        <div class="row about-wrapper">
-          <div class="about-wrapper__image">
-            <img
-              class="img-fluid"
-              src="./assets/YoonLee22.jpeg"
-              alt="Profile Image"
-              width="450"
-              height="350"
-            />
-          </div>
-          <div class="about-wrapper__info">
-            <p class="about-wrapper__info-text">
-              Hi, I'm Yoon.
-            </p>
-            <p>
-              I'm a data science consultant at Management Solutions in Boston, working with banking clients on regulatory reporting and data quality — translating messy business logic into production SQL and scalable pipelines on GCP. Came to data through statistics at UIUC, with prior consulting stints at EY in Seoul and Chicago. Mostly work in Python, SQL, and GCP these days, with R, Selenium, and a long tail of other tools picked up along the way.
-            </p>
-            <p>
-              Outside of work: collage-based digital art, fashion, running, reading, cooking, and an embarrassing amount of Brawl Stars.
-            </p>
+      <section id="work">
+        <div class="wrap">
+          <div class="sec-head"><span class="num">02</span><h2>Selected Work</h2></div>
+          <div class="work">
+            <a class="line" href="https://overtheexit.shinyapps.io/datascientist_insights/" target="_blank" rel="noopener noreferrer">
+              <span class="idx">01</span>
+              <span class="t">Data Scientist Salary Insight<span class="stack">R · Shiny · Tidyverse</span></span>
+              <span class="arrow" aria-hidden="true">↗</span>
+            </a>
+            <a class="line" href="https://public.tableau.com/views/GamesSalesDashboard_16860650207060/DashboardProject-CS416" target="_blank" rel="noopener noreferrer">
+              <span class="idx">02</span>
+              <span class="t">Game Sales Dashboard<span class="stack">Tableau</span></span>
+              <span class="arrow" aria-hidden="true">↗</span>
+            </a>
+            <a class="line" href="https://github.com/overtheexit" target="_blank" rel="noopener noreferrer">
+              <span class="idx">03</span>
+              <span class="t">Regulatory Data-Quality on GCP<span class="stack">BigQuery · Looker Studio</span></span>
+              <span class="arrow" aria-hidden="true">↗</span>
+            </a>
           </div>
         </div>
-      </div>
-    </section>
-    <!-- /END About Section -->
+      </section>
 
-    <!-- Experience Section -->
-    <section id="experience">
-      <div class="container">
-        <h2 class="section-title">Where I’ve Worked</h2>
-        <div id="experience-container">
-          <div id="experience-list">
-            <ul>
-              <li class="experience-item active" data-experience="0">Management Solutions</li>
-              <li class="experience-item" data-experience="1">EY Blockchain</li>
-              <li class="experience-item" data-experience="2">EY Seoul</li>
-            </ul>
-          </div>
-          <div id="experience-details">
-            <!-- Management Solutions Experience -->
-            <div class="experience-detail" id="experience-0">
-              <h3>Data Science Consultant @ <a class="company-name" href="https://www.managementsolutions.com/en">Management Solutions</a></h3>
-              <p>Sep 2024 - Current</p>
-              <ul>
-                <li><b>Migrated</b> a legacy Data Quality tool to <b>Google Cloud Platform</b> for a top US bank's Regulatory Reporting team, <b>converting</b> parameterized rule definitions into rigorously specified logic for <b>enterprise-scale validation</b>.</li>
-                <li><b>Translated</b> business-defined rules into <b>production-grade BigQuery SQL</b>, <b>standardizing</b> ambiguous parameterized logic into deterministic queries that <b>strengthened data integrity</b> in regulatory submissions.</li>
-                <li><b>Designed</b> interactive <b>Looker Studio dashboards</b> visualizing <b>MoM/QoQ trends</b>, line-item variances, and cross-repository comparisons that <b>accelerated anomaly detection</b> for stakeholders.</li>              </ul>
-            </div>
-            <!-- EY Blockchain Experience -->
-            <div class="experience-detail active" id="experience-1">
-              <h3>Technology Consulting Intern @ <a class="company-name" href="https://blockchain.ey.com">EY Blockchain</a></h3>
-              <p>Jun 2023 - Aug 2023</p>
-              <ul>
-                <li><b>Directed</b> comprehensive analysis of blockchain protocols, enhancing financial traceability and transparency for an NGO’s fund disbursement system.</li>
-                <li>Developed 10 data visualizations using Tableau to track developer activity and network performance, <b>improving client-facing reporting efficiency by 25%</b>.</li>
-                <li><b>Managed</b> cross-functional teams across business, design, and engineering, driving a <b>15% increase in product adoption</b>.</li>
-              </ul>
-            </div>
-            <!-- EY Seoul Experience -->
-            <div class="experience-detail" id="experience-2">
-              <h3>Digital Technology Consulting Intern @ <a class="company-name" href="https://www.ey.com/ko_kr/digital">EY Seoul</a></h3>
-              <p>Jun 2022 - Aug 2022</p>
-              <ul>
-                <li>Conducted market research and analysis on global smartphone and wearable markets, providing strategic insights that <b>improved market prediction accuracy by 20%</b> and supported strategic marketing decisions.</li>
-                <li>Analyzed and cleansed over 1 million social media sentiment data points, delivering data-driven insights that <b>increased client engagement metrics by 25%</b>.</li>
-                <li>Automated data extraction and cleansing processes using SQL, enhancing data processing efficiency by <b>35%</b> and reducing manual labor by <b>40%</b>.</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- /END Experience Section -->
-
-    <!--Projects Section-->
-    <section id="projects">
-      <div class="container">
-        <div class="project-wrapper">
-          <h2 class="section-title dark-blue-text">Things I've made</h2>
-
-          <!-- Each .row is a project -->
-          <article class="row">
-            <div class="project-wrapper__text">
-              <h3 class="project-wrapper__text-title">Data Scientist Salary Insight</h3>
-              <p class="project-wrapper__text-info">
-                Wrote <a href="https://github.com/overtheexit/DataScientist_Insights" class="project-link"><b>R Script</b></a>
-                and deployed it with <a href="https://overtheexit.shinyapps.io/datascientist_insights/" class="project-link"><b>shinyApps</b></a>. 
-                <b>Tidyverse</b> was heavily used to wrangle and visualize the salary data obtained from Kaggle.
-                The app generates bar chart that depicts how much each technical skills are required by the given condition of data science jobs
-                like salary range or Industry Sector. 
-              </p>
-              <div class="project-wrapper__text-btns">
-                <a
-                  href="https://overtheexit.shinyapps.io/datascientist_insights/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  class="cta-btn cta-btn--hero cta-btn--projects"
-                  >See Live</a
-                >
-                <a href="https://github.com/overtheexit/DataScientist_Insights" target="_blank" class="cta-btn text-color-main"
-                  >Source Code</a
-                >
+      <section id="experience">
+        <div class="wrap">
+          <div class="sec-head"><span class="num">03</span><h2>Experience</h2></div>
+          <div class="xp">
+            <article class="item">
+              <div class="when">2024 — NOW<br /><span class="loc">Boston</span></div>
+              <div>
+                <h3 class="role">Data Science Consultant II · <span class="org">Management Solutions</span></h3>
+                <ul>
+                  <li>Own the end-to-end data-quality platform for a major US bank's regulatory reporting team — 3,000+ rule definitions turned into precise, executable logic across regulatory datasets.</li>
+                  <li>Translate compliance requirements into production DQ rules with client SMEs — defining what "correct" means per field, then implementing it as reusable, parameterized checks.</li>
+                  <li>Built Looker Studio dashboards (MoM/QoQ trends, line-item variance) that cut anomaly-detection time by 50%.</li>
+                  <li>Built a Selenium automation pipeline to sync loan records into a new core banking platform — 80%+ less migration time and error.</li>
+                </ul>
               </div>
-            </div>
-
-            <div class="project-wrapper__image">
-              <a href="https://github.com/overtheexit/DataScientist_Insights" target="_blank" rel="noopener noreferrer">
-                <div class="thumbnail rounded">
-                  <img
-                    src="./assets/DataScientist_insight.png"
-                    class="img-fluid"
-                    alt="Project Image"
-                    width="1366"
-                    height="767"
-                  />
-                </div>
-              </a>
-            </div>
-          </article>
-          <!-- /END Project -->
-
-          <!-- Each .row is a project -->
-          <article class="row">
-            <div class="project-wrapper__text">
-              <h3 class="project-wrapper__text-title">Game Sales Data visualization</h3>
-              <p class="project-wrapper__text-info">
-                Created a data visualization using <a href="https://public.tableau.com/views/GamesSalesDashboard_16860650207060/DashboardProject-CS416?:language=en-US&:sid=&:display_count=n&:origin=viz_share_link" class="project-link"><b>Tableau</b></a> that shows game sales by genre and time, 
-                top 10 game name by sales, and top 10 gaming platforms by sales.
-                Utilized area chart, bar chart, and bubble plot.
-              </p>
-              <!-- <div class='tableauPlaceholder' id='viz1719292992799' style='position: relative'>
-                <noscript>
-                  <a href='#'>
-                    <img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ga&#47;GamesSalesDashboard_16860650207060&#47;DashboardProject-CS416&#47;1_rss.png' style='border: none' />
-                  </a>
-                </noscript>
-                <object class='tableauViz'  style='display:none;'>
-                  <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> 
-                  <param name='embed_code_version' value='3' /> 
-                  <param name='site_root' value='' /><param name='name' value='GamesSalesDashboard_16860650207060&#47;DashboardProject-CS416' />
-                  <param name='tabs' value='yes' />
-                  <param name='toolbar' value='yes' />
-                  <param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ga&#47;GamesSalesDashboard_16860650207060&#47;DashboardProject-CS416&#47;1.png' /> 
-                  <param name='animate_transition' value='yes' />
-                  <param name='display_static_image' value='yes' />
-                  <param name='display_spinner' value='yes' />
-                  <param name='display_overlay' value='yes' />
-                  <param name='display_count' value='yes' />
-                  <param name='language' value='en-US' />
-                </object>
-              </div>                
-              <script type='text/javascript'>                    
-                var divElement = document.getElementById('viz1719292992799');                    
-                var vizElement = divElement.getElementsByTagName('object')[0];                    
-                if ( divElement.offsetWidth > 800 ) {
-                  vizElement.style.minWidth='1000px';
-                  vizElement.style.maxWidth='100%';
-                  vizElement.style.minHeight='850px';
-                  vizElement.style.maxHeight=(divElement.offsetWidth*0.75)+'px';
-                } else if ( divElement.offsetWidth > 500 ) {
-                  vizElement.style.minWidth='1000px';
-                  vizElement.style.maxWidth='100%';
-                  vizElement.style.minHeight='850px';
-                  vizElement.style.maxHeight=(divElement.offsetWidth*0.75)+'px';
-                } else { 
-                  vizElement.style.width='100%';
-                  vizElement.style.minHeight='900px';
-                  vizElement.style.maxHeight=(divElement.offsetWidth*1.77)+'px';
-                }                     
-                  var scriptElement = document.createElement('script');                    
-                  scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    
-                  vizElement.parentNode.insertBefore(scriptElement, vizElement);                
-                </script> -->
-              <div class="project-wrapper__text-btns">
-                <a
-                  href="https://public.tableau.com/views/GamesSalesDashboard_16860650207060/DashboardProject-CS416?:language=en-US&:sid=&:display_count=n&:origin=viz_share_link"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  class="cta-btn cta-btn--hero cta-btn--projects"
-                  >See Live</a
-                >
-                <!-- <a href="#" target="_blank" class="cta-btn text-color-main"
-                  >Source Code</a> -->
+            </article>
+            <article class="item">
+              <div class="when">2023<br /><span class="loc">Chicago</span></div>
+              <div>
+                <h3 class="role">Technology Consulting Intern · <span class="org">EY Blockchain</span></h3>
+                <ul>
+                  <li>Researched blockchain protocols to improve traceability of fund flows for an NGO's disbursement structures.</li>
+                  <li>Produced 10 data visualizations on developer and network activity, integrated into client-facing products.</li>
+                </ul>
               </div>
-            </div>
-
-            <div class="project-wrapper__image">
-              <a href="https://public.tableau.com/views/GamesSalesDashboard_16860650207060/DashboardProject-CS416?:language=en-US&:sid=&:display_count=n&:origin=viz_share_link" target="_blank" rel="noopener noreferrer">
-                <div class="thumbnail rounded">
-                  <img
-                    src="./assets/Tableau.png"
-                    class="img-fluid"
-                    alt="Project Image"
-                    width="1366"
-                    height="767"
-                  />
-                </div>
-              </a>
-            </div>
-          </article>
-
-          <article class="row">
-            <div class="project-wrapper__text">
-              <h3 class="project-wrapper__text-title">NFT Digital Art</h3>
-              <p class="project-wrapper__text-info">
-                Mainly <b>Collage</b> by pictures that were taken by me and modified by me!
-                I used Photoleap and Canva on my iphone to make this collage.
-                Every pieces that I wanted to publish is on-chain, so feel free to visit my 
-                <a href="https://opensea.io/overtheexit" class="project-link"><b>Opensea</b></a> page!
-              </p>
-              <div class="project-wrapper__text-btns">
-                <a
-                  href="https://opensea.io/overtheexit"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  class="cta-btn cta-btn--hero cta-btn--projects"
-                  >Collection</a
-                >
-                 <!-- <a href="#" target="_blank" class="cta-btn text-color-main"
-                  >Source Code</a
-                >  -->
+            </article>
+            <article class="item">
+              <div class="when">2022<br /><span class="loc">Seoul</span></div>
+              <div>
+                <h3 class="role">Digital Technology Consulting Intern · <span class="org">Ernst &amp; Young</span></h3>
+                <ul>
+                  <li>Researched global smartphone and wearables markets, informing client marketing strategy.</li>
+                  <li>Cleansed 1M+ social-sentiment data points (BrandWatch, Sprinklr) — +25% customer engagement.</li>
+                </ul>
               </div>
-            </div>
-
-            <div class="project-wrapper__image">
-              <a href="https://opensea.io/overtheexit" target="_blank" rel="noopener noreferrer">
-                <div class="thumbnail rounded">
-                  <img
-                    src="./assets/OpenSeaArt2.png"
-                    class="img-fluid"
-                    alt="Project Image"
-                    width="1366"
-                    height="767"
-                  />
-                </div>
-              </a>
-            </div>
-          </article>
-          <!-- /END Project -->
+            </article>
+            <article class="item">
+              <div class="when">2019 — 21<br /><span class="loc">Paju</span></div>
+              <div>
+                <h3 class="role">Administrative Specialist, 9th Division · <span class="org">Republic of Korea Army</span></h3>
+                <ul>
+                  <li>Mandatory service — managed personnel data for 103 soldiers and automated the Excel workflows behind it.</li>
+                </ul>
+              </div>
+            </article>
+            <article class="item">
+              <div class="when">SEP–OCT 2019<br /><span class="loc">Daejeon</span></div>
+              <div>
+                <h3 class="role">Research Assistant, Cognitive Neuro-Imaging Lab · <span class="org">KAIST</span></h3>
+                <ul>
+                  <li>Supported research on early Alzheimer's detection from MRI, CT, and PET scans.</li>
+                </ul>
+              </div>
+            </article>
+          </div>
         </div>
-      </div>
-    </section>
-    <!-- End Projects Section -->
+      </section>
 
-    <!-- Contact Section -->
-    <section id="contact">
-      <div class="container">
-        <h2 class="section-title">Contact</h2>
-        <div class="contact-wrapper">
-          <p class="contact-wrapper__text">Feel Free to Reach Out!</p>
-          <a href="mailto:yoonseo.lee1212@gmail.com" class="cta-btn cta-btn--resume">Email Me!</a>
+      <section class="gallery" id="gallery">
+        <div class="wrap">
+          <div class="sec-head"><span class="num">04</span><h2>Gallery</h2></div>
+          <p class="intro">
+            Collage in found photography — shot and composed on iPhone, published on-chain. The
+            recurring blue mirror-ball is my mark: <span class="mono">overtheexit</span>. Click a
+            work to view it full-frame.
+          </p>
+          <div class="room" id="room" role="list"><!-- rendered from javascript/gallery.js --></div>
         </div>
-      </div>
-    </section>
-    <!-- END Contact Section -->
+      </section>
+    </main>
 
-    <!-- Modal Structure -->
-    <!-- <div id="emailModal" class="modal">
-      <div class="modal-content">
-        <span class="close">&times;</span>
-        <form>
-          <label for="name">Name</label>
-          <input type="text" id="name" name="name" placeholder="Your name.." required>
-
-          <label for="email">Email</label>
-          <input type="email" id="email" name="email" placeholder="Your email.." required>
-
-          <label for="message">Message</label>
-          <textarea id="message" name="message" placeholder="Write something.." required></textarea>
-
-          <button type="submit" class="cta-btn--submit">Send</button>
-        </form>
-      </div>
-    </div> -->
-    <!-- END Contact Modal -->
-
-    <!-- Footer Section -->
-    <footer class="footer">
-      <div class="container">
-        <a href="#hero" class="back-to-top" aria-label="go back to top">
-          <i class="fa fa-angle-up fa-2x" aria-hidden="true"></i>
-        </a>
-        <div class="social-links">
-          <a
-            href="https://x.com/overtheexit"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="twitter"
-          >
-          <i class="fa-brands fa-twitter"></i>
-          </a>
-          <a
-            href="https://www.instagram.com/yoon.s.lee/"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="instagram"
-          >
-            <i class="fa-brands fa-instagram"></i>
-          </a>
-          <!-- <a
-            href="#!"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="codepen"
-          >
-            <i class="fa-brands fa-codepen"></i>
-          </a> -->
-          <a
-            href="https://www.linkedin.com/in/yoonlee1212/"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="linkedin"
-          >
-            <i class="fa-brands fa-linkedin"></i>
-          </a>
-          <a
-            href="https://github.com/overtheexit"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="github"
-          >
-            <i class="fa-brands fa-github"></i>
-          </a>
-        </div>
-        <hr />
-        <p class="footer__text">
-          Made with &#9749; by <a href="https://github.com/overtheexit">Yoon Lee</a>
+    <footer id="contact">
+      <div class="wrap">
+        <p class="eyebrow footer-eyebrow">Contact</p>
+        <p class="ftitle">
+          Let's make something<br />worth a second look.
+          <a href="mailto:yoonseo.lee1212@gmail.com">Say hello ↗</a>
         </p>
+        <div class="fmeta">
+          <div class="social">
+            <a href="https://www.linkedin.com/in/yoonlee1212/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            <a href="https://github.com/overtheexit" target="_blank" rel="noopener noreferrer">GitHub</a>
+            <a href="https://opensea.io/overtheexit" target="_blank" rel="noopener noreferrer">OpenSea</a>
+            <a href="https://www.instagram.com/yoon.s.lee/" target="_blank" rel="noopener noreferrer">Instagram</a>
+            <a href="https://x.com/overtheexit" target="_blank" rel="noopener noreferrer">X</a>
+          </div>
+          <p class="cr">© <span id="yr"></span> Yoon Lee · overtheexit</p>
+        </div>
       </div>
     </footer>
-    <!-- END Footer Section -->
 
-    <script>
-      document.getElementById("year").textContent = new Date().getFullYear()
-    </script>
-    <script src="./javascript/vanilla-tilt.min.js"></script>
-    <script type="text/javascript" src="./javascript/valtilt.js"></script>
-    <!-- <script src="/javascript/modal.js"></script> -->
-    <script src="./javascript/experience.js"></script>
-    <script src="./javascript/toc.js"></script>
+    <!-- Lightbox -->
+    <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Artwork viewer" hidden>
+      <button class="lightbox-close" id="lightboxClose" aria-label="Close viewer">✕</button>
+      <figure class="lightbox-inner">
+        <img id="lightboxImg" src="" alt="" />
+        <figcaption id="lightboxCap"></figcaption>
+      </figure>
+    </div>
+
+    <script src="./javascript/gallery.js"></script>
+    <script src="./javascript/curves.js"></script>
+    <script src="./javascript/site.js"></script>
   </body>
-  
 </html>
