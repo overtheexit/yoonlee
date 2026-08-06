@@ -433,25 +433,15 @@ section {
 }
 .room {
   display: grid;
-  grid-template-columns: repeat(6, 1fr);
-  gap: 30px 22px;
-  grid-auto-flow: dense;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px 26px;
+  align-items: start;
 }
 figure.piece {
   margin: 0;
   display: flex;
   flex-direction: column;
   gap: 12px;
-  grid-column: span 2;
-}
-figure.piece.s2 {
-  grid-column: span 2;
-}
-figure.piece.s3 {
-  grid-column: span 3;
-}
-figure.piece.s4 {
-  grid-column: span 4;
 }
 .frame {
   position: relative;
@@ -519,25 +509,13 @@ figure.piece.s4 {
 }
 @media (max-width: 900px) {
   .room {
-    grid-template-columns: repeat(4, 1fr);
-  }
-  figure.piece.s4 {
-    grid-column: span 4;
-  }
-  figure.piece.s3 {
-    grid-column: span 2;
+    grid-template-columns: repeat(2, 1fr);
   }
 }
-@media (max-width: 560px) {
+@media (max-width: 540px) {
   .room {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 22px 14px;
-  }
-  figure.piece,
-  figure.piece.s2,
-  figure.piece.s3,
-  figure.piece.s4 {
-    grid-column: span 2;
+    grid-template-columns: 1fr;
+    gap: 30px;
   }
 }
 

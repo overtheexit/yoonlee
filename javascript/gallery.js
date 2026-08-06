@@ -52,7 +52,7 @@ const GALLERY = [
 
   GALLERY.forEach((p) => {
     const fig = document.createElement("figure");
-    fig.className = "piece s" + p.span;
+    fig.className = "piece";
     fig.setAttribute("role", "listitem");
 
     const frame = document.createElement("div");
