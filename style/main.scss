@@ -791,6 +791,25 @@ footer {
 @media (prefers-reduced-motion: reduce) {
   .dot { animation: none; }
 }
+// Phone: shrink the dots and tuck them into the top/bottom bands so the
+// headline stays clear.
+@media (max-width: 600px) {
+  .hero { padding: 76px 0 72px; }
+  .art-hero { min-height: 78vh; }
+  .art-hero .hero { padding: 72px 0 40px; }
+  // Cluster the dots in the open band below the text so the headline and lede
+  // stay completely clear.
+  .dot.d1 { width: 92px; height: 92px; top: auto; bottom: 68px; right: 8%; }
+  .dot.d2 { width: 52px; height: 52px; top: auto; bottom: 156px; right: 12%; }
+  .dot.d3 { width: 40px; height: 40px; top: auto; bottom: 62px; right: 34%; }
+  .dot.d4 { width: 60px; height: 60px; top: auto; bottom: 132px; right: 42%; }
+  .dot.d5 { width: 46px; height: 46px; top: auto; bottom: 206px; right: 24%; }
+  .crop { width: 12px; height: 12px; }
+  .crop.tl, .crop.tr { top: 16px; }
+  .crop.bl, .crop.br { bottom: 16px; }
+  .crop.tl, .crop.bl { left: 16px; }
+  .crop.tr, .crop.br { right: 16px; }
+}
 .room-count {
   color: var(--room-soft);
   font-size: 12px;
