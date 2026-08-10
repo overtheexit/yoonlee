@@ -659,8 +659,42 @@ footer {
 }
 
 /* ---- ART PAGE ---- */
+.art-hero {
+  position: relative;
+  background: var(--room);
+  color: var(--room-ink);
+  overflow: hidden;
+}
+.art-hero canvas {
+  z-index: 0;
+  opacity: 0.5;
+}
+.art-hero .scrim {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  pointer-events: none;
+  background: linear-gradient(
+      90deg,
+      rgba(14, 15, 19, 0.92) 0%,
+      rgba(14, 15, 19, 0.62) 46%,
+      rgba(14, 15, 19, 0.28) 100%
+    ),
+    linear-gradient(0deg, rgba(14, 15, 19, 0.9), transparent 42%);
+}
 .art-hero .hero {
+  position: relative;
+  z-index: 2;
   padding: 96px 0 84px;
+}
+.art-hero .eyebrow {
+  color: var(--room-soft);
+}
+.art-hero h1 {
+  color: var(--room-ink);
+}
+.art-hero .lede {
+  color: var(--room-soft);
 }
 .room-count {
   color: var(--room-soft);
