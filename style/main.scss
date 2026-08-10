@@ -662,32 +662,23 @@ footer {
 .art-hero {
   position: relative;
   overflow: hidden;
-  // Neutral Pantone-ish dots — deeper tones on ivory, lighter on black,
-  // so they always hold contrast with the page.
-  --d1: #6e6357;
-  --d2: #8b7e6e;
-  --d3: #5e6a5e;
-  --d4: #877079;
+  // Floating dots: pink, yellow, blue stay put across themes; the fourth is a
+  // light blue in dark mode that flips to red on the ivory (non-dark) page.
+  --d1: #e68aa6; // pink
+  --d2: #efc14e; // yellow
+  --d3: #3f6fd1; // blue
+  --d4: #d8432e; // light mode → red
 }
 @media (prefers-color-scheme: dark) {
   .art-hero {
-    --d1: #e9e2d3;
-    --d2: #cbb9a1;
-    --d3: #a6b2a4;
-    --d4: #d9beb4;
+    --d4: #6fb0e6; // dark mode → lighter blue
   }
 }
 :root[data-theme="dark"] .art-hero {
-  --d1: #e9e2d3;
-  --d2: #cbb9a1;
-  --d3: #a6b2a4;
-  --d4: #d9beb4;
+  --d4: #6fb0e6;
 }
 :root[data-theme="light"] .art-hero {
-  --d1: #6e6357;
-  --d2: #8b7e6e;
-  --d3: #5e6a5e;
-  --d4: #877079;
+  --d4: #d8432e;
 }
 .art-hero .hero {
   position: relative;
@@ -746,6 +737,14 @@ footer {
   bottom: 12%;
   right: 7%;
   animation: floatA 23s ease-in-out infinite reverse;
+}
+.dot.d5 {
+  width: 76px;
+  height: 76px;
+  background: var(--d5, #9a9a9a); // set to a random color per load by site.js
+  top: 18%;
+  right: 27%;
+  animation: floatB 17s ease-in-out infinite reverse;
 }
 @keyframes floatA {
   0%, 100% { transform: translate(0, 0); }

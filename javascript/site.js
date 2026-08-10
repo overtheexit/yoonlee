@@ -7,6 +7,17 @@
   if (yr) yr.textContent = new Date().getFullYear();
 })();
 
+// Fifth floating dot gets a fresh random color every load. Controlled HSL keeps
+// it vivid but readable on both the ivory and black backgrounds.
+(function () {
+  const d5 = document.querySelector(".art-hero .dot.d5");
+  if (!d5) return;
+  const hue = Math.floor(Math.random() * 360);
+  const sat = 62 + Math.floor(Math.random() * 20); // 62–82%
+  const light = 56 + Math.floor(Math.random() * 10); // 56–66%
+  d5.style.setProperty("--d5", "hsl(" + hue + " " + sat + "% " + light + "%)");
+})();
+
 // Lightbox
 (function () {
   const box = document.getElementById("lightbox");
