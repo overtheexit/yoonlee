@@ -1,0 +1,231 @@
+#experience {
+  padding: 5rem 2rem 10rem 2rem;
+  background-color: $light-white;
+  color: $dark-grey;
+  font-family: $font-family;
+  //margin-bottom: 5rem; 
+
+  // @include respond(tab-land) {
+  //   -webkit-clip-path: polygon(0 15vh, 100% 0, 100% 100%, 0 100%);
+  //   clip-path: polygon(0 15vh, 100% 0, 100% 100%, 0 100%);
+  //   padding: 15rem 0 10rem 0;
+  //   margin-top: -15rem;
+  //   margin-bottom: -1px;
+  // }
+
+  // @include respond(big-desktop) {
+  //   -webkit-clip-path: polygon(0 15vh, 100% 0, 100% 100%, 0 100%);
+  //   clip-path: polygon(0 15vh, 100% 0, 100% 100%, 0 100%);
+  //   padding: 15rem 0 10rem 0;
+  //   margin-top: -15rem;
+  //   margin-bottom: -1px;
+  // }
+
+  .section-title {
+    font-size: $big-font-size;
+    margin-bottom: 3rem;
+    color: $dark-blue-text;
+  }
+
+  #experience-container {
+    display: flex;
+    flex-direction: row;
+
+    @include respond(tab-land) {
+      flex-direction: row;
+    }
+
+    @include respond(tab-port) {
+      flex-direction: column;
+    }
+
+    @include respond(phone) {
+      flex-direction: column;
+    }
+
+    #experience-list {
+      width: 30%;
+      border-right: 3px solid $dark-grey;
+      margin-right: 2rem;
+
+      ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+
+        .experience-item {
+          cursor: pointer;
+          padding: 1rem 0;
+          font-size: 2rem;
+          color: $primary-color;
+          transition: color 0.3s;
+
+          &.active {
+            color: $secondary-color;
+            font-weight: bold;
+          }
+
+          &:hover {
+            color: $dark-blue-text;
+          }
+        }
+      }
+
+      @include respond(tab-port) {
+        width: 100%;
+        border-right: none;
+        border-bottom: 3px solid $dark-grey;
+        margin-right: 0;
+        margin-bottom: 2rem;
+        padding-bottom: 1rem;
+
+        ul {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          flex-wrap: wrap;
+
+          .experience-item {
+            padding: 0.5rem;
+            font-size: $default-font-size;
+            text-align: center;
+            flex: 1;
+          }
+        }
+      }
+
+      @include respond(phone) {
+        width: 100%;
+        border-right: none;
+        border-bottom: 3px solid $dark-grey;
+        margin-right: 0;
+        margin-bottom: 2rem;
+        padding-bottom: 1rem;
+
+        ul {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          flex-wrap: wrap;
+
+          .experience-item {
+            padding: 0.5rem;
+            font-size: $default-font-size;
+            text-align: center;
+            flex: 1;
+          }
+        }
+      }
+    }
+
+    #experience-details {
+      width: 70%;
+      padding-left: 2rem;
+
+      .experience-detail {
+        display: none;
+        text-align: left;
+
+        &.active {
+          display: block;
+        }
+
+        h3 {
+          font-size: 2rem;
+          margin-bottom: 1rem;
+          color: $dark-blue-text;
+
+          @include respond(tab-port) {
+            font-size: 1.8rem;
+          }
+
+          @include respond(phone) {
+            font-size: $default-font-size;
+          }
+
+          // New styles for dynamic underline on company name
+          .company-name {
+            color: $dark-blue-text;
+            font-size: 2rem;
+            position: relative;  // To position the underline correctly
+            display: inline-block;  // Inline element for text width
+            cursor: pointer;
+            @include respond(tab-port) {
+              font-size: 1.8rem;
+            }
+  
+            @include respond(phone) {
+              font-size: $default-font-size;
+            }
+
+            // Dynamic underline effect
+            &:after {
+              content: "";
+              position: absolute;
+              left: 0;
+              bottom: -2px;  // Position underline 2px below text
+              width: 100%;
+              height: 2px;  // Height of the underline
+              background: currentColor;  // Use the text color
+              transform: scaleX(0);  // Initially hidden
+              transform-origin: left;  // Animate from left to right
+              transition: transform 0.3s ease;  // Smooth transition
+            }
+
+            &:hover:after {
+              transform: scaleX(1);  // Full width on hover
+            }
+          }
+        }
+
+        p {
+          font-size: $default-font-size;
+          margin-bottom: 1.5rem;
+          text-align: left;
+
+          @include respond(tab-port) {
+            font-size: 1.3rem;
+          }
+
+          @include respond(phone) {
+            font-size: 0.8rem;
+          }
+        }
+
+        ul {
+          list-style: square;
+          padding-left: 1.5rem;
+          text-align: left;
+
+          li {
+            margin-bottom: 0.8rem;
+            text-align: left;
+            font-size: 1.2rem;
+
+            @include respond(tab-port) {
+              font-size: 1rem;
+            }
+
+            @include respond(phone) {
+              font-size: 0.8rem;
+            }
+          }
+        }
+      }
+
+      @include respond(tab-port) {
+        width: 100%;
+        padding-left: 0;
+        padding-top: 0;
+        border-top: none;
+      }
+
+      @include respond(phone) {
+        width: 100%;
+        padding-left: 0;
+        padding-top: 0;
+        border-top: none;
+      }
+    }
+  }
+}

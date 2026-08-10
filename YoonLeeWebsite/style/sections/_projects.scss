@@ -1,0 +1,121 @@
+#projects {
+  background-color: $light-white;
+  color: $dark-blue-text;
+  margin-top: -15rem;
+  padding-top: 15rem;
+
+  @include respond(tab-land) {
+    margin-top: 0;
+    padding-top: 5rem;
+  }
+  @include respond(phone) {
+    padding-bottom: 1px;
+  }
+
+  .project-wrapper {
+    margin-bottom: 15rem;
+
+    @include respond(phone) {
+      margin-bottom: 0rem;
+    }
+
+    .row {
+      margin: 0;
+      margin-bottom: 8rem;
+
+      @include respond(phone) {
+        margin-bottom: 4rem;
+      }
+    }
+
+    &__text {
+      width: 100%;
+      text-align: left;
+
+      @include respond(tab-land) {
+        margin-bottom: 4.8rem;
+      }
+      @include respond(phone) {
+        margin-bottom: 2.5rem;
+      }
+
+      &-title {
+        font-weight: bold;
+        margin-bottom: 1.8rem;
+        font-size: $mid-font-size;
+
+        @include respond(phone) {
+          font-size: 2rem;
+        }
+      }
+
+      &-info {
+        margin-bottom: 1.5rem;
+
+        .b {
+          color: $secondary-color;
+        }
+
+        // Styles for the dynamic underline effect on the link
+        .project-link {
+          text-decoration: none;  // No underline by default
+          position: relative;
+          color: inherit;  // Maintain inherited text color
+
+          &:after {
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: -2px;  // Adjust as necessary for underline position
+            width: 100%;
+            height: 1px;  // Height of the underline
+            background: currentColor;
+            transform: scaleX(0);  // Initial scale for animation
+            transition: transform 0.3s ease;  // Smooth transition
+          }
+
+          &:hover:after {
+            transform: scaleX(1);  // Full scale on hover
+          }
+        }
+      }
+
+      &-btns {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+      }
+    }
+
+    &__image {
+      width: 90%;
+      margin: 0 auto;
+
+      @include respond(tab-land) {
+        width: 100%;
+        margin: 0;
+      }
+
+      & .thumbnail {
+        border: none;
+        box-shadow: 8px 8px 9px 7px rgba(174, 174, 192, 0.4),
+          -5px -5px 15px 7px #ffffff;
+
+        .img-fluid {
+          width: 100%;
+          height: auto;
+          vertical-align: middle;
+          border-radius: 2px;
+        }
+
+        @include respond(phone) {
+          box-shadow: none;
+          border: 1px solid #d2d2d2;
+          margin-bottom: 3.2rem;
+          transform: none;
+        }
+      }
+    }
+  }
+}
