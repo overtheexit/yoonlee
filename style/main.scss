@@ -77,7 +77,9 @@ img {
 .wrap {
   max-width: var(--maxw);
   margin: 0 auto;
-  padding: 0 28px;
+  // Side gutters, expanded past a notch/rounded corner when present.
+  padding-left: max(28px, env(safe-area-inset-left));
+  padding-right: max(28px, env(safe-area-inset-right));
 }
 .mono {
   font-family: var(--mono);
@@ -176,7 +178,9 @@ header canvas {
 }
 .hero {
   position: relative;
-  padding: 108px 0 96px;
+  // Vertical only — keep .wrap's side gutters intact.
+  padding-top: 108px;
+  padding-bottom: 96px;
   .eyebrow {
     margin-bottom: 26px;
   }
@@ -683,7 +687,8 @@ footer {
 .art-hero .hero {
   position: relative;
   z-index: 4;
-  padding: 112px 0 104px;
+  padding-top: 112px;
+  padding-bottom: 104px;
 }
 // Print grain
 .art-hero .grain {
@@ -794,9 +799,9 @@ footer {
 // Phone: shrink the dots and tuck them into the top/bottom bands so the
 // headline stays clear.
 @media (max-width: 600px) {
-  .hero { padding: 76px 0 72px; }
+  .hero { padding-top: 76px; padding-bottom: 72px; }
   .art-hero { min-height: 78vh; }
-  .art-hero .hero { padding: 72px 0 40px; }
+  .art-hero .hero { padding-top: 72px; padding-bottom: 40px; }
   // Cluster the dots in the open band below the text so the headline and lede
   // stay completely clear.
   .dot.d1 { width: 92px; height: 92px; top: auto; bottom: 68px; right: 8%; }
@@ -809,6 +814,25 @@ footer {
   .crop.bl, .crop.br { bottom: 16px; }
   .crop.tl, .crop.bl { left: 16px; }
   .crop.tr, .crop.br { right: 16px; }
+}
+// Very narrow (Galaxy Fold cover screen ~280px, small phones): shrink the
+// gutter and headline so nothing overflows or crowds the edge.
+@media (max-width: 360px) {
+  .wrap {
+    padding-left: max(18px, env(safe-area-inset-left));
+    padding-right: max(18px, env(safe-area-inset-right));
+  }
+  h1 { font-size: clamp(28px, 9vw, 40px); }
+  .work .t { font-size: clamp(18px, 6vw, 24px); }
+  .contact-actions { width: 100%; }
+  .btn-dark { flex: 1; justify-content: center; }
+  // Smaller, lower dot cluster so the taller wrapped lede stays clear.
+  .art-hero { min-height: 86vh; }
+  .dot.d1 { width: 66px; height: 66px; bottom: 40px; right: 9%; }
+  .dot.d2 { width: 38px; height: 38px; bottom: 112px; right: 16%; }
+  .dot.d3 { width: 28px; height: 28px; bottom: 38px; right: 42%; }
+  .dot.d4 { width: 42px; height: 42px; bottom: 96px; right: 46%; }
+  .dot.d5 { width: 32px; height: 32px; bottom: 150px; right: 27%; }
 }
 .room-count {
   color: var(--room-soft);
