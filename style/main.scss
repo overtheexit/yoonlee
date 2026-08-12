@@ -115,11 +115,13 @@ nav .wrap {
   letter-spacing: -0.01em;
 }
 .ball {
-  width: 16px;
-  height: 16px;
+  width: 20px;
+  height: 20px;
   border-radius: 50%;
-  background: radial-gradient(circle at 32% 28%, #8f8bff 0%, #2a1fb8 42%, #140a6e 100%);
-  box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.15) inset, 0 2px 8px rgba(37, 25, 160, 0.4);
+  background-image: url("../assets/logo-ball.png");
+  background-size: cover;
+  background-position: center;
+  box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.12) inset, 0 1px 6px rgba(37, 25, 160, 0.35);
   flex: none;
 }
 .nav-right {
@@ -751,6 +753,28 @@ footer {
   right: 27%;
   animation: floatB 17s ease-in-out infinite reverse;
 }
+// The distorted disco ball — a real image, floats and is draggable like the dots.
+.dot.d6 {
+  width: 132px;
+  height: 132px;
+  top: 44%;
+  right: 20%;
+  animation: floatC 18s ease-in-out infinite;
+}
+.dot.disco {
+  background-image: url("../assets/disco-distorted.jpg");
+  background-size: cover;
+  background-position: center;
+  box-shadow: 0 6px 26px rgba(20, 10, 90, 0.4);
+}
+// Interactive: draggable
+.art-hero .dot {
+  cursor: grab;
+  touch-action: none;
+}
+.art-hero .dot:active {
+  cursor: grabbing;
+}
 @keyframes floatA {
   0%, 100% { transform: translate(0, 0); }
   50% { transform: translate(-20px, -26px); }
@@ -809,6 +833,7 @@ footer {
   .dot.d3 { width: 40px; height: 40px; top: auto; bottom: 62px; right: 34%; }
   .dot.d4 { width: 60px; height: 60px; top: auto; bottom: 132px; right: 42%; }
   .dot.d5 { width: 46px; height: 46px; top: auto; bottom: 206px; right: 24%; }
+  .dot.d6 { width: 84px; height: 84px; top: auto; bottom: 220px; right: 46%; }
   .crop { width: 12px; height: 12px; }
   .crop.tl, .crop.tr { top: 16px; }
   .crop.bl, .crop.br { bottom: 16px; }
@@ -833,6 +858,7 @@ footer {
   .dot.d3 { width: 28px; height: 28px; bottom: 38px; right: 42%; }
   .dot.d4 { width: 42px; height: 42px; bottom: 96px; right: 46%; }
   .dot.d5 { width: 32px; height: 32px; bottom: 150px; right: 27%; }
+  .dot.d6 { width: 58px; height: 58px; bottom: 158px; right: 8%; }
 }
 .room-count {
   color: var(--room-soft);

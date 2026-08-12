@@ -44,6 +44,20 @@ const GALLERY = [
     span: 2,
     ar: "828 / 1026",
   },
+  {
+    src: "./assets/gallery/untitled-2.jpg",
+    title: "Untitled-2",
+    year: "2020",
+    medium: "iPhone photograph — horizontal color smear",
+    ar: "1493 / 1800",
+  },
+  {
+    src: "./assets/gallery/summer-2019.jpg",
+    title: "Summer 2019",
+    year: "2019",
+    medium: "Digital collage — iPhone · Davis, CA",
+    ar: "1350 / 1800",
+  },
 ];
 
 (function renderGallery() {
